@@ -1,0 +1,153 @@
+#home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.righthome {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lefthome {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+}
+.righthome img {
+  width: 60%;
+  filter: drop-shadow(2px 2px 20px rgb(116, 201, 225));
+}
+.homedetials {
+  font-size: 2vmax;
+}
+.homedetials button {
+  padding: 10px 30px;
+  background-color: rgb(116, 201, 225);
+  border: 2px solid rgb(116, 201, 225);
+  border-radius: 20px;
+  margin: 30px;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.homedetials button:hover {
+  background-color: transparent;
+  color: rgb(116, 201, 225);
+}
+.line1 {
+  font-size: 0.6em;
+}
+.line2 {
+  font-size: 2em;
+  background: linear-gradient(to right, rgb(37, 117, 126), white);
+  background-clip: text;
+  color: transparent;
+}
+.line3 {
+  font-size: 1em;
+}
+@media (max-width: 900px) {
+  .homedetials {
+    font-size: 2.8vmax;
+  }
+  .righthome img {
+    width: 75%;
+  }
+  .homedetials button {
+    margin: 20px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 750px) {
+  #home {
+    flex-direction: column-reverse;
+    min-height: 100vh;
+  }
+  .lefthome {
+    width: 100%;
+    min-height: 50vh;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  .righthome {
+    width: 100%;
+    min-height: 50vh;
+    height: auto;
+    padding-top: 30px;
+    align-items: end;
+  }
+  .righthome img {
+    width: 55%;
+    max-width: 300px;
+  }
+  .homedetials {
+    font-size: 5vw;
+  }
+  .homedetials button {
+    padding: 8px 25px;
+    margin: 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  #home {
+    min-height: 100vh;
+  }
+  .righthome {
+    min-height: 42vh;
+    padding-top: 20px;
+    align-items: end;
+  }
+  .lefthome {
+    min-height: 58vh;
+  }
+  .righthome img {
+    width: 65%;
+  }
+  .homedetials {
+    font-size: 6vw;
+  }
+  .line1 {
+    font-size: 0.7em;
+  }
+  .line2 {
+    font-size: 1.7em;
+  }
+  .line3 {
+    font-size: 0.9em;
+  }
+  .homedetials button {
+    padding: 8px 22px;
+    margin: 15px;
+    font-size: 15px;
+  }
+} /* ================= VERY SMALL MOBILE ================= */
+@media (max-width: 350px) {
+  .righthome {
+    min-height: 38vh;
+  }
+  .lefthome {
+    min-height: 62vh;
+  }
+  .righthome img {
+    width: 70%;
+    align-items: end;
+  }
+  .homedetials {
+    font-size: 6.5vw;
+  }
+  .line2 {
+    font-size: 1.5em;
+  }
+  .homedetials button {
+    padding: 7px 20px;
+    font-size: 14px;
+  }
+}
